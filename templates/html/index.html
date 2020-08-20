@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+      <script src="first.js"></script>
+    <link rel = "stylesheet" href = "first.css" >
+</head>
+<body>
+<!--<nav class="navbar navbar-dark bg-dark">-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">ShivSena</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container ">
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container mt-5">
+    <form method="post" action="card/">{% csrf_token %}
+      <div class="mb-2">
+        <label for="name" class="form-label">Enter Your Name</label>
+        <input type="text" class="form-control" id="name" aria-describedby="name">
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Enter your phone number</label>
+        <input type="text" class="form-control" id="phone">
+      </div>
+      <div class="md-4">
+        <label for="email" class="form-label">Enter Your Email-id</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="md-5">
+        <label for="birth" class="form-label">Enter Your Date Of Birth</label>
+        <input type="text" class="form-control" id="birth">
+        <small id="emailHelp" class="form-text text-muted">Plese Enter In That Formate e.g.(date-month-year | 19-10-1997).</small>
+      </div>
+        <div class="md-5">
+          <label for="frm" class="form-label">Tenure Start</label>
+          <input type="text" class="form-control" id="frm">
+        </div>
+        <div class="md-5">
+          <label for="to" class="form-label">Tenure End</label>
+          <input type="text" class="form-control" id="to">
+        </div>
+      <div class="md-5">
+          <label for="special_number" class="form-label">special_number</label>
+          <input type="text" class="form-control" id="special_number">
+        </div>
+<!--      <div class="mb-3 form-check">-->
+<!--        <input type="checkbox" class="form-check-input" id="exampleCheck1">-->
+<!--        <label class="form-check-label" for="exampleCheck1">Check me out</label>-->
+<!--      </div>-->
+<br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+
+</div>
+</body>
+</html>
