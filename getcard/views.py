@@ -10,9 +10,11 @@ def index(request):
         frm = request.POST['frm']
         to = request.POST['to']
         special_number = request.POST['special_number']
-    contact = form(name=name,  phone=phone,email=email,birth=birth,frm=frm,to=to,special_number=special_number)
-    contact.save()
+        contact = form(name=name,  phone=phone,email=email,birth=birth,frm=frm,to=to,special_number=special_number)
+        contact.save()
     return render(request, './html/index.html')
 
 def card(request):
-    return HttpResponse('hello this is card')
+    all = form.objects.all()
+    print(all)
+    return render(request, './html/card.html',{'all':all[1]})
